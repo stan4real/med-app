@@ -11,7 +11,7 @@ import ProtectedRoute from './components/ProtectedRoute.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/med-app'>
       <Routes>
         <Route element={<Layout/>}>
           <Route index element={<MainPage/>}/>
