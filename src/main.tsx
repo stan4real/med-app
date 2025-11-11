@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import { HashRouter, Route, Routes } from "react-router"
+import { BrowserRouter, Route, Routes } from "react-router"
 import Layout from './components/ui/Layout/layout/Layout.tsx'
 import MainPage from './components/pages/main/MainPage.tsx'
 import ContactsPage from './components/pages/contacts/ContactsPage.tsx'
@@ -11,7 +11,7 @@ import ProtectedRoute from './components/ProtectedRoute.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route element={<Layout/>}>
           <Route index element={<MainPage/>}/>
@@ -23,6 +23,6 @@ createRoot(document.getElementById('root')!).render(
             }/>
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   </StrictMode>,
 )
