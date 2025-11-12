@@ -30,6 +30,6 @@
 Сначала клонируйте репозиторий и установите зависимости:
 
 ```bash
-git clone https://github.com/yourusername/project-name.git
-cd project-name
+git clone https://github.com/stan4real/med-app.git
+cd med-app
 npm install
